@@ -146,7 +146,20 @@ export const getGraphProperties = (
                 "agora_asr_language": language,
             },
         }
-    } else if (graphName == "va.minimax.azure") {
+    } else if (graphName == "va.openai.cosy") {
+        return {
+            "openai_chatgpt": {
+                "model": "abab7-chat-preview",
+                "base_url": "https://api.minimax.chat/v1",
+                "prompt": prompt,
+                "greeting": greeting,
+            },
+            "agora_rtc": {
+                "agora_asr_language": language,
+            },
+        }
+    }
+    else if (graphName == "va.minimax.azure") {
         return {
             "minimax_v2v_python": {
                 "voice_id": voiceNameMap[language]["minimax"][voiceType],

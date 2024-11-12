@@ -39,25 +39,29 @@ export const LANGUAGE_OPTIONS: LanguageOptionItem[] = [
   },
 ];
 export const GRAPH_OPTIONS: GraphOptionItem[] = [
-  {
-    label: "Voice Agent - OpenAI LLM + Azure TTS",
-    value: "va.openai.azure",
-  },
-  {
-    label: "Voice Agent with Vision - OpenAI LLM + Azure TTS",
-    value: "camera.va.openai.azure",
-  },
+  // {
+  //   label: "Voice Agent - OpenAI LLM + Azure TTS",
+  //   value: "va.openai.azure",
+  // },
+  // {
+  //   label: "Voice Agent with Vision - OpenAI LLM + Azure TTS",
+  //   value: "camera.va.openai.azure",
+  // },
   // {
   //   label: "Voice Agent with Knowledge - RAG + Qwen LLM + Cosy TTS",
   //   value: "va.qwen.rag"
   // },
+  // {
+  //   label: "Voice Agent with OpenAI Realtime API (Beta)",
+  //   value: "va.openai.v2v",
+  // },
+  // {
+  //   label: "Voice Agent with OpenAI Realtime API (Beta) + FishAudio TTS",
+  //   value: "va.openai.v2v.fish",
+  // },
   {
-    label: "Voice Agent with OpenAI Realtime API (Beta)",
-    value: "va.openai.v2v",
-  },
-  {
-    label: "Voice Agent with OpenAI Realtime API (Beta) + FishAudio TTS",
-    value: "va.openai.v2v.fish",
+    label: "Voice Agent with Minimax Preview",
+    value: "va.openai.cosy",
   },
   {
     label: "Voice Agent with Minimax",
