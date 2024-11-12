@@ -11,7 +11,7 @@ import styles from "./index.module.scss"
 import { GithubIcon } from "../icons"
 import packageData from "../../../package.json"
 import Image from 'next/image'
-import cnLogoSrc from "@/assets/cnlogo.png"
+// import cnLogoSrc from "@/assets/cnlogo.png"
 
 const { version } = packageData
 
@@ -85,7 +85,7 @@ const LoginCard = () => {
     </section>
     <section className={styles.content}>
       <div className={styles.title}>
-        <Image src={cnLogoSrc} alt="logo" width={52} height={30}></Image>
+        {/* <Image src={cnLogoSrc} alt="logo" width={52} height={30}></Image> */}
         {/* <span className={styles.title}>TEN Agent</span> */}
         <span className={styles.text}>实时语音智能助手</span>
       </div>
