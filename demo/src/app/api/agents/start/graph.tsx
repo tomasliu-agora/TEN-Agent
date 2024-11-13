@@ -23,8 +23,8 @@ export const voiceNameMap: LanguageMap = {
             female: "danya_xuejie"
         },
         minimax_tts: {
-            male: "male-qn-jingying",
-            female: "female-shaonv"
+            male: "wps_zhangqingyuan9",
+            female: "xiaomileizong"
         },
         cosy_tts: {
             male: "longshu",
@@ -53,8 +53,8 @@ export const voiceNameMap: LanguageMap = {
             female: "danya_xuejie"
         },
         minimax_tts: {
-            male: "male-qn-jingying",
-            female: "female-shaonv"
+            male: "wps_zhangqingyuan9",
+            female: "xiaomileizong"
         },
         cosy_tts: {
             male: "longshu",
@@ -75,8 +75,8 @@ export const voiceNameMap: LanguageMap = {
             female: "danya_xuejie"
         },
         minimax_tts: {
-            male: "male-qn-jingying",
-            female: "female-shaonv"
+            male: "wps_zhangqingyuan9",
+            female: "xiaomileizong"
         },
         cosy_tts: {
             male: "longshu",
@@ -97,8 +97,8 @@ export const voiceNameMap: LanguageMap = {
             female: "danya_xuejie"
         },
         minimax_tts: {
-            male: "male-qn-jingying",
-            female: "female-shaonv"
+            male: "wps_zhangqingyuan9",
+            female: "xiaomileizong"
         },
         cosy_tts: {
             male: "longshu",
