@@ -266,6 +266,10 @@ class MiniMaxExtension(Extension):
                                             start_time)
                                         logger.info(
                                             f"trace-id: {trace_id}, ttfb {ttfb}ms")
+                                else:
+                                    logger.warning(f"invalid chunk data {data}")
+                            else:
+                                logger.warning(f"invalid chunk data {data}")
                         else:
                             logger.warning(f"invalid chunk {chunk}")
 
