@@ -23,8 +23,12 @@ export const voiceNameMap: LanguageMap = {
             female: "danya_xuejie"
         },
         minimax_tts: {
-            male: "male-qn-qingse",
+            male: "male-qn-jingying",
             female: "female-shaonv"
+        },
+        cosy_tts: {
+            male: "longshu",
+            female: "longxiaochun"
         }
     },
     "en-US": {
@@ -49,8 +53,12 @@ export const voiceNameMap: LanguageMap = {
             female: "danya_xuejie"
         },
         minimax_tts: {
-            male: "male-qn-qingse",
+            male: "male-qn-jingying",
             female: "female-shaonv"
+        },
+        cosy_tts: {
+            male: "longshu",
+            female: "longxiaochun"
         }
     },
     "ja-JP": {
@@ -67,8 +75,12 @@ export const voiceNameMap: LanguageMap = {
             female: "danya_xuejie"
         },
         minimax_tts: {
-            male: "male-qn-qingse",
+            male: "male-qn-jingying",
             female: "female-shaonv"
+        },
+        cosy_tts: {
+            male: "longshu",
+            female: "longxiaochun"
         }
     },
     "ko-KR": {
@@ -85,8 +97,12 @@ export const voiceNameMap: LanguageMap = {
             female: "danya_xuejie"
         },
         minimax_tts: {
-            male: "male-qn-qingse",
+            male: "male-qn-jingying",
             female: "female-shaonv"
+        },
+        cosy_tts: {
+            male: "longshu",
+            female: "longxiaochun"
         }
     },
 };
@@ -173,6 +189,9 @@ export const getGraphProperties = (
             "agora_rtc": {
                 "agora_asr_language": language,
             },
+            "cosy_tts": {
+                "voice": voiceNameMap[language]["cosy_tts"][voiceType],
+            }
         }
     }
     else if (graphName == "va_openai_minimax") {

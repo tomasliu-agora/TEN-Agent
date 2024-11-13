@@ -64,6 +64,10 @@ export const GRAPH_OPTIONS: GraphOptionItem[] = [
     value: "va.openai.cosy",
   },
   {
+    label: "Voice Agent with Minimax & TTS Preview",
+    value: "va_openai_minimax",
+  },
+  {
     label: "Voice Agent with Minimax",
     value: "va.minimax.azure",
   },
