@@ -3360,7 +3360,7 @@
                         "property": {
                             "api_key": "${env:MINIMAX_TTS_API_KEY}",
                             "group_id": "${env:MINIMAX_TTS_GROUP_ID}",
-                            "model": "speech-01-turbo",
+                            "model": "speech-01-240228",
                             "voice_id": "male-qn-qingse",
                             "sample_rate": 32000,
                             "dump": true
