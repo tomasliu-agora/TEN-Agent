@@ -21,6 +21,10 @@ export const voiceNameMap: LanguageMap = {
         minimax: {
             male: "junlang_nanyou",
             female: "danya_xuejie"
+        },
+        minimax_tts: {
+            male: "male-qn-qingse",
+            female: "female-shaonv"
         }
     },
     "en-US": {
@@ -43,6 +47,10 @@ export const voiceNameMap: LanguageMap = {
         minimax: {
             male: "junlang_nanyou",
             female: "danya_xuejie"
+        },
+        minimax_tts: {
+            male: "male-qn-qingse",
+            female: "female-shaonv"
         }
     },
     "ja-JP": {
@@ -57,6 +65,10 @@ export const voiceNameMap: LanguageMap = {
         minimax: {
             male: "junlang_nanyou",
             female: "danya_xuejie"
+        },
+        minimax_tts: {
+            male: "male-qn-qingse",
+            female: "female-shaonv"
         }
     },
     "ko-KR": {
@@ -71,6 +83,10 @@ export const voiceNameMap: LanguageMap = {
         minimax: {
             male: "junlang_nanyou",
             female: "danya_xuejie"
+        },
+        minimax_tts: {
+            male: "male-qn-qingse",
+            female: "female-shaonv"
         }
     },
 };
@@ -157,6 +173,22 @@ export const getGraphProperties = (
             "agora_rtc": {
                 "agora_asr_language": language,
             },
+        }
+    }
+    else if (graphName == "va_openai_minimax") {
+        return {
+            "openai_chatgpt": {
+                "model": "abab7-chat-preview",
+                "base_url": "https://api.minimax.chat/v1",
+                "prompt": prompt,
+                "greeting": greeting,
+            },
+            "agora_rtc": {
+                "agora_asr_language": language,
+            },
+            "minimax_tts": {
+                "voice_id": voiceNameMap[language]["minimax_tts"][voiceType],
+            }
         }
     }
     else if (graphName == "va.minimax.azure") {
